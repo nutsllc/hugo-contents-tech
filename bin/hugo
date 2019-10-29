@@ -2,8 +2,11 @@
 
 SELF=$(cd $(dirname $0); pwd)
 
+TOYBOX_UID=$(id -u)
+TOYBOX_GID=$(id -g)
+
 function _hugo() {
-    docker run -v ${SELF}/../:/site --rm -it nutsllc/toybox-hugo hugo
+    docker run -p ${TOYBOX_UID}:${TOYBOX_GID} -v ${SELF}/../:/site --rm -it nutsllc/toybox-hugo hugo
 }
 
 _hugo && {
