@@ -1,7 +1,9 @@
 baseurl = "https://tech.ontheroad.jp/"
-languageCode = "en-us"
+#languageCode = "en-us"
+languageCode = "ja-JS"
 theme = "hugo-theme-terminal"
 paginate = 5
+defaultContentLanguage="ja"
 
 [params]
   contentTypeName = "post"
@@ -11,25 +13,25 @@ paginate = 5
   centerTheme = false
 
 [languages]
-  [languages.en]
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
+  [languages.ja]
+    title = "Tech Note"
+    subtitle = "技術的なトピックを気ままに更新する個人ブログ"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
+    readMore = "続きを読む"
+    readOtherPosts = "別の記事を読む"
 
-    [languages.en.params.logo]
-      logoText = "Terminal"
+    [languages.ja.params.logo]
+      logoText = "Tech Note"
       logoHomeLink = "/"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
+    [languages.ja.menu]
+      [[languages.ja.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
-      [[languages.en.menu.main]]
+      [[languages.ja.menu.main]]
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
